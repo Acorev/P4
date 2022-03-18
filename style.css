@@ -824,7 +824,20 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+/* Modif */
+.modif-p-1{
+    font-size: 20px;
+}
 
+.modif-p-2{
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.modif-p-3{
+    font-size: 13px;
+}
+/****************/
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
