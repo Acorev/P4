@@ -860,13 +860,13 @@ a{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -884,10 +884,7 @@ a{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -896,8 +893,6 @@ a{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1050,5 +1045,15 @@ a{
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .bloc-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloc-size{
+        max-width : 100%;
+        height: auto;
+        display: block;
     }
 }
